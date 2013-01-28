@@ -72,9 +72,10 @@ VerticalTabs.prototype = {
           case "Darwin":
             this.installStylesheet("resource://verticaltabs/skin/osx/osx.css");
             break;
-          case "Linux":
+          default:
             this.installStylesheet("resource://verticaltabs/skin/linux/linux.css");
             break;
+        }
         }
 
         this.rearrangeXUL();
